@@ -19,7 +19,7 @@ sudo apt-get install build-essential rubygems ruby-dev libsqlite3-dev sqlite3
 gem install mailcatcher
 ```
 
-##Démarrer Mailcatcher
+## Démarrer Mailcatcher
 Il suffit de lancer la commande
 ```bash
 mailcatcher
@@ -33,14 +33,14 @@ L'interface de mailcatcher est désormais disponible sur ```mailcatcher.mondomai
 
 Si vous souhaitez que le mailcatcher soit accessible sur le port 80, il faut faire un reverse proxy.
 
-##Exemple pour Apache:
-###Activation des modules 
+## Exemple pour Apache:
+### Activation des modules 
 Pour utiliser Apache en mode reverse proxy, il faut activer deux modules ```proxy``` et ```proxy_http``` via la commande ```a2enmod```
 ```bash
 sudo a2enmod proxy proxy_http
 ```
 
-###Création du vhost
+### Création du vhost
 ```bash
 vi /etc/apache2/sites-available/mailcatcher.conf
 ```
@@ -76,8 +76,8 @@ sudo service apache2 reload
 ```
 L'interface de mailcatcher est désormais disponible sur ```mailcatcher.mondomain.fr```
 
-##Exemple configuration projet
-###Laravel
+## Exemple configuration projet
+### Laravel
 Pour configurer le SMTP de mailcatcher dans un projet Laravel, il faut mettre cette configuration dans le fichier ```.env```
 ```
 MAIL_DRIVER=smtp
@@ -87,7 +87,7 @@ MAIL_USERNAME=
 MAIL_PASSWORD=
 ```
 
-###Synfony
+### Synfony
 Pour configurer le SMTP de mailcatcher dans un projet Synfony, il faut mettre cette configuration dans le fichier ``` app/config/parameters.yml```
 ```yaml
 mailer_transport: smtp
