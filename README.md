@@ -8,7 +8,7 @@ Il suffit de configurer son projet sur le port SMTP du mailcatcher et tous les m
 
 Plus aucun mail ne sera envoyé au destinataire final alors qu'il n'aurait pas dû...
 
-## Installation des paquets de base 
+## Installation des paquets de base 
 ```bash
 sudo apt-get install linux-headers-$(uname -r)
 sudo apt-get install build-essential rubygems ruby-dev libsqlite3-dev sqlite3
@@ -33,7 +33,7 @@ L'interface de mailcatcher est désormais disponible sur ```mailcatcher.mondomai
 
 Si vous souhaitez que le mailcatcher soit accessible sur le port 80, il faut faire un reverse proxy.
 
-## Exemple pour Apache:
+## Exemple pour Apache
 ### Activation des modules 
 Pour utiliser Apache en mode reverse proxy, il faut activer deux modules ```proxy``` et ```proxy_http``` via la commande ```a2enmod```
 ```bash
