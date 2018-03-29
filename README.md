@@ -16,7 +16,7 @@ sudo apt-get install build-essential rubygems ruby-dev libsqlite3-dev sqlite3
 
 ## Installation de mailcatcher
 ```bash
-gem install mailcatcher
+sudo gem install mailcatcher
 ```
 
 ## Démarrer Mailcatcher
@@ -42,7 +42,7 @@ sudo a2enmod proxy proxy_http
 
 ### Création du vhost
 ```bash
-vi /etc/apache2/sites-available/mailcatcher.conf
+sudo vi /etc/apache2/sites-available/mailcatcher.conf
 ```
 Coller la configuration du vhost ci-dessous, en l'adaptant à vos informations
 ```apacheconfig
